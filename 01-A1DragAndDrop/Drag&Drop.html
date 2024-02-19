@@ -12,7 +12,10 @@
     <div class="drop-area" draggable="true">
         <h2>Drag & Drop files</h2>
         <button>Upload files</button>
-        <input type="file" name="inputFiles[]" id="input-file" hidden multiple />
+        <form action="Drag&Drop.php" method="POST">
+            <input type="file" name="inputFiles[]" id="input-file" hidden multiple />
+            <button type="submit" hidden>Upload Files</button>
+        </form>
     </div>
     <div id="preview"></div>
     <script src="./Drag&Drop.js"></script>
