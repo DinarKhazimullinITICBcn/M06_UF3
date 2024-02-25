@@ -19,17 +19,26 @@
             <li>
                 <label for="password">Contrasenya</label>
                 <input type="text" id="password">
+                <div id="passwordRequirements" hidden>
+                    <p id="length">8 caracteres como minimo</p>
+                    <p id="upperCase">1 letra mayuscula</p>
+                    <p id="lowerCase">1 letra minuscula</p>
+                    <p id="number">1 numero</p>
+                    <p id="specialCharacter">1 digito especial</p>
+                </div>
             </li>
             <li>
                 <label for="passwordConfirmation">Confirma contrasenya</label>
                 <input type="text" id="passwordConfirmation">
+                <p id="passwordConfirmationP" hidden>La contrasenya no coincideix</p>
             </li>
             <li>
                 <label for="address">Adreça</label>
                 <input type="text" id="address">
+                <p id="addressRequired" style="color:red; display:none;">L'adreça postal es obligatoria.</p>
             </li>
             <li>
-                <input type="submit">
+                <input type="submit" id="submit">
             </li>
         </ul>
     </form>
