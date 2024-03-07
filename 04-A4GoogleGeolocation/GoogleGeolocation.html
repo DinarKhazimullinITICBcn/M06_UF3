@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <style>
+        #map{
+            height: 400px;
+            width:600px;
+        }
+    </style>
+    <title>Simple Markers</title>
+</head>
+<body>
+    <div id="map"></div>
+    <button type="button" class="btn btn-secondary" id="localitza">Localitza</button>
+    <input type="text" id="address" placeholder="Enter address here">
+    <button type="button" class="btn btn-secondary" id="findLoc">Buscar adreça</button>
+    <input type="hidden" name="lat" value="" id="latitude"/>
+    <input type="hidden" name="lng" value="" id="longitude"/>
+    <script src="https://polyfill.io/v3/polyfill.min.js?features=default"></script>
+    <script src="./GoogleGeolocation.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAwEQr8flR0CtMZ-
+jSs9hK8lscYUMOtVPk&callback=initMap" async defer></script>
+</body>
+</html>
