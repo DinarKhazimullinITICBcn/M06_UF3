@@ -106,7 +106,7 @@ $conn->close();
         let btnRemove = document.querySelectorAll(".btnRemove");
         btnRemove.forEach(el => {
             el.addEventListener("click", function(e) {
-                e.preventDefault(); // prevent the default action
+                e.preventDefault(); 
 
                 let formData = new FormData();
                 formData.append("id", this.getAttribute("idProd"));
